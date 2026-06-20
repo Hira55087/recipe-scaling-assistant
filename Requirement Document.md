@@ -139,20 +139,31 @@ Users often find recipes that serve 4-6 people but need to cook for a different 
   - Placeholder text with example recipe
   - Character count or warning if recipe is very long
   - "Reset" button to clear input
+  - Clear affordances for ask/scaling requests and conversions
 
-#### UX-3: Control Panel
-- **Requirement**: Intuitive scaling controls
+#### UX-3: Chat / Input Interface
+- **Requirement**: Built with clear affordances for user intent
 - **Details**:
-  - Prominent horizontal slider with labels
-  - Quick action buttons below slider
-  - Manual input field with +/- buttons
-  - Display current serving size or multiplier
+  - Dedicated query input field for scaling, conversion, or help requests
+  - Example prompts shown near the input
+  - Visible submit button and optional enter-to-send behavior
+  - Clear separation between recipe scaling and unit conversion flows
 
-#### UX-4: Output Preview
+#### UX-4: Loading & Streaming State
+- **Requirement**: Show progress and activity clearly
+- **Details**:
+  - Typing indicator or spinner during tool/agent processing
+  - Streaming token feedback if the backend supports partial responses
+  - Disabled submit control while processing
+  - Friendly status text such as "Scaling recipe..." or "Converting units..."
+
+#### UX-5: Output Preview
 - **Requirement**: Clear display of scaled recipe
 - **Details**:
   - Highlight modified measurements (different color/bold)
   - Show original and scaled side-by-side (optional)
+  - Organized, readable format
+  - Copy and print buttons
   - Organized, readable format
   - Copy and print buttons
 

@@ -1,23 +1,40 @@
-import { ChangeEvent, useMemo, useState } from 'react';
+import { ChangeEvent, useMemo, useState, useEffect } from 'react';
 import { getMeasurementDetails, scaleRecipeText } from './utils/recipeParser';
 import styles from './App.module.css';
 
-const defaultRecipe = `Classic Chocolate Chip Cookies (Makes 24 cookies, 12 servings)
-- 1 ⅞ cups All-purpose flour
-- ¾ tsp Baking soda
-- ¾ tsp Salt
-- ¾ cup plus 1 tbsp Butter, softened
-- ⅝ cup Granulated sugar (approx. 10 tbsp)
-- ⅝ cup Packed brown sugar (approx. 10 tbsp)
-- 2 Large eggs (See note below)
-- 1 ½ tsp Vanilla extract
-- 1 ⅔ cups Chocolate chips
-`;
+interface RecipeHistory {
+  id: string;
+  recipeName: string;
+  recipeText: string;
+  originalServings: number;
+  scale: number;
+  timestamp: number;
+}
+
+const HISTORY_STORAGE_KEY = 'recipeHistory';
 
 function App() {
-  const [recipeText, setRecipeText] = useState(defaultRecipe);
+  const [recipeText, setRecipeText] = useState('');
   const [originalServings, setOriginalServings] = useState(4);
   const [scale, setScale] = useState(1);
+  const [history, setHistory] = useState<RecipeHistory[]>(() => {
+    try {
+      const savedHistory = localStorage.getItem(HISTORY_STORAGE_KEY);
+      return savedHistory ? JSON.parse(savedHistory) : [];
+    } catch {
+      return [];
+    }
+  });
+  const [showHistory, setShowHistory] = useState(false);
+
+  // Save history to localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(history));
+    } catch {
+      // Ignore storage errors in private mode or if localStorage is unavailable
+    }
+  }, [history]);
 
   const scaledSegments = useMemo(
     () => scaleRecipeText(recipeText, scale),
@@ -51,6 +68,56 @@ function App() {
     setScale(1);
   };
 
+  // Auto-save recipe to history when recipe text changes or scale/original servings update
+  useEffect(() => {
+    if (!recipeText.trim()) {
+      return;
+    }
+
+    const recipeName = recipeText.split('\n')[0] || 'Untitled Recipe';
+
+    setHistory((prevHistory) => {
+      const lastEntry = prevHistory[0];
+
+      if (lastEntry?.recipeText === recipeText) {
+        if (lastEntry.originalServings === originalServings && lastEntry.scale === scale) {
+          return prevHistory; // No change
+        }
+
+        const updatedEntry = {
+          ...lastEntry,
+          originalServings,
+          scale,
+          timestamp: Date.now(),
+        };
+        return [updatedEntry, ...prevHistory.slice(1)];
+      }
+
+      const newEntry: RecipeHistory = {
+        id: Date.now().toString(),
+        recipeName,
+        recipeText,
+        originalServings,
+        scale,
+        timestamp: Date.now(),
+      };
+
+      const updated = [newEntry, ...prevHistory];
+      return updated.slice(0, 20);
+    });
+  }, [recipeText, originalServings, scale]);
+
+  const handleLoadFromHistory = (entry: RecipeHistory) => {
+    setRecipeText(entry.recipeText);
+    setOriginalServings(entry.originalServings);
+    setScale(entry.scale);
+    setShowHistory(false);
+  };
+
+  const handleDeleteFromHistory = (id: string) => {
+    setHistory(history.filter((entry) => entry.id !== id));
+  };
+
   const quickScaleOptions = [0.5, 1, 1.5, 2];
 
   return (
@@ -58,7 +125,7 @@ function App() {
       <header className={styles.header}>
         <h1 className={styles.title}>Recipe Scaler</h1>
         <p className={styles.subtitle}>
-          Paste your recipe, set original servings, and use the slider to scale ingredients instantly.
+          Paste your recipe, set original servings, and use the slider to scale ingredients. Recipes are automatically saved to history.
         </p>
       </header>
 
@@ -72,7 +139,7 @@ function App() {
             className={styles.textarea}
             value={recipeText}
             onChange={(event) => setRecipeText(event.target.value)}
-            placeholder="Paste your recipe here..."
+            placeholder="Paste your recipe here... (automatically saved to history)"
           />
 
           <div className={styles.servingSection}>
@@ -137,6 +204,16 @@ function App() {
               Reset recipe
             </button>
           </div>
+
+          <div className={styles.controlRow}>
+            <button
+              type="button"
+              className={`${styles.button} ${showHistory ? styles.activeButton : ''}`}
+              onClick={() => setShowHistory(!showHistory)}
+            >
+              View history ({history.length})
+            </button>
+          </div>
         </section>
 
         <section className={styles.panel}>
@@ -158,7 +235,18 @@ function App() {
               <ul className={styles.detailList}>
                 {measurementDetails.map((detail, index) => (
                   <li key={index} className={styles.detailItem}>
-                    <strong>{detail.originalText}</strong> → {detail.scaledText}
+                    <div className={styles.detailRow}>
+                      <div className={styles.detailConversion}>
+                        <strong>{detail.originalText}</strong> 
+                        {detail.gramConversion && (
+                          <span className={styles.gramValue}> → {detail.gramConversion}</span>
+                        )}
+                      </div>
+                      <div className={styles.detailArrow}>→</div>
+                      <div className={styles.detailScaled}>
+                        {detail.scaledText}
+                      </div>
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -171,6 +259,45 @@ function App() {
             Measurements highlighted in the preview are updated automatically based on serving size.
           </p>
         </section>
+
+        {showHistory && (
+          <section className={styles.panel}>
+            <div className={styles.label}>Recipe History</div>
+            {history.length === 0 ? (
+              <p className={styles.smallNote}>No saved recipes yet. Scale a recipe and click "Save to history".</p>
+            ) : (
+              <ul className={styles.historyList}>
+                {history.map((entry) => (
+                  <li key={entry.id} className={styles.historyItem}>
+                    <div className={styles.historyItemName}>{entry.recipeName}</div>
+                    <div className={styles.historyItemDetails}>
+                      {entry.originalServings} servings → {entry.scale}x
+                    </div>
+                    <div className={styles.historyItemDate}>
+                      {new Date(entry.timestamp).toLocaleDateString()}
+                    </div>
+                    <div className={styles.historyItemActions}>
+                      <button
+                        type="button"
+                        className={styles.smallButton}
+                        onClick={() => handleLoadFromHistory(entry)}
+                      >
+                        Load
+                      </button>
+                      <button
+                        type="button"
+                        className={`${styles.smallButton} ${styles.deleteButton}`}
+                        onClick={() => handleDeleteFromHistory(entry.id)}
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        )}
       </div>
     </div>
   );

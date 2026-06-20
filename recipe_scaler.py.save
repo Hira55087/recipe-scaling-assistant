@@ -1,0 +1,10 @@
+from openai impoclient = OpenAI()
+
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role": "user", "content": "Scale recipe from 2 servings to 6 servings"}
+    ]
+)
+
+print(response.choices[0].message.content)

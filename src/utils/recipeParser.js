@@ -138,6 +138,48 @@ export function formatMeasurement(value) {
     }
     return roundedToTwo.toFixed(2).replace(/\.00$/, '');
 }
+// Conversion table: unit -> grams per unit
+const UNIT_TO_GRAMS = {
+    // Volume measurements (approximations for water/milk)
+    'cup': 240,
+    'cups': 240,
+    'tbsp': 15,
+    'tablespoon': 15,
+    'tablespoons': 15,
+    'tsp': 5,
+    'teaspoon': 5,
+    'teaspoons': 5,
+    'ml': 1,
+    'milliliter': 1,
+    'milliliters': 1,
+    'l': 1000,
+    'liter': 1000,
+    'liters': 1000,
+    'fl oz': 30,
+    'fl. oz': 30,
+    'oz': 28.35,
+    // Weight measurements
+    'g': 1,
+    'gram': 1,
+    'grams': 1,
+    'kg': 1000,
+    'kilogram': 1000,
+    'kilograms': 1000,
+    'lb': 454,
+    'lbs': 454,
+    'pound': 454,
+    'pounds': 454,
+};
+function convertToGrams(quantity, unit) {
+    const normalizedUnit = unit.toLowerCase().trim();
+    const gramsPerUnit = UNIT_TO_GRAMS[normalizedUnit];
+    if (gramsPerUnit) {
+        const totalGrams = quantity * gramsPerUnit;
+        const roundedGrams = Math.round(totalGrams * 10) / 10; // Round to 1 decimal
+        return `${roundedGrams}g`;
+    }
+    return null;
+}
 export function getMeasurementDetails(recipeText, scale) {
     const details = [];
     const regex = createMeasurementRegex();
@@ -146,9 +188,16 @@ export function getMeasurementDetails(recipeText, scale) {
         const originalQuantity = match[1];
         const originalUnit = match[2];
         const originalText = `${originalQuantity} ${originalUnit}`;
-        const scaledValue = parseAmount(originalQuantity) * scale;
+        const originalAmount = parseAmount(originalQuantity);
+        const scaledValue = originalAmount * scale;
         const scaledText = `${formatMeasurement(scaledValue)} ${originalUnit}`;
-        details.push({ originalText, scaledText });
+        // Convert original measurement to grams
+        const gramConversion = convertToGrams(originalAmount, originalUnit);
+        details.push({
+            originalText,
+            scaledText,
+            gramConversion: gramConversion || undefined,
+        });
     }
     return details;
 }

@@ -26,3 +26,18 @@ A React + Vite application for scaling recipe ingredient measurements in real ti
 - Add copy/export buttons
 - Add keyboard accessibility improvements
 - Add unit tests for parser utilities
+
+## Streamlit frontend workflow
+
+This project now includes a Streamlit frontend that sends recipe scaling requests through the agent pipeline:
+
+- Streamlit UI in `app.py`
+- Agent routing in `agent.py`
+- Scaling, conversion, and knowledge tools in `tools.py`
+
+### Run the Streamlit app
+
+```bash
+python3 -m pip install -r requirements.txt
+streamlit run app.py
+```

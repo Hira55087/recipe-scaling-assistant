@@ -239,6 +239,38 @@ body {
   margin-bottom: 0.55rem;
 }
 
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.detailConversion {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.gramValue {
+  color: #8b7f73;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.detailArrow {
+  color: #d4a574;
+  font-weight: 600;
+}
+
+.detailScaled {
+  color: #2b2a28;
+  font-weight: 500;
+  min-width: 100px;
+}
+
 .highlight {
   background: #fff1d4;
   border-radius: 0.35rem;
@@ -254,4 +286,75 @@ body {
 .smallNote {
   color: #7b6b5f;
   font-size: 0.95rem;
+}
+
+.historyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.historyItem {
+  background: #faf6f1;
+  border: 1px solid #e6dbd3;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.historyItemName {
+  font-weight: 600;
+  color: #2b2a28;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.historyItemDetails {
+  color: #5c5147;
+  font-size: 0.85rem;
+}
+
+.historyItemDate {
+  color: #8b7f73;
+  font-size: 0.75rem;
+}
+
+.historyItemActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.smallButton {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d9c9c0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2b2a28;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.smallButton:hover {
+  background: #ecad74;
+  border-color: #ecad74;
+  color: #ffffff;
+}
+
+.deleteButton {
+  background: #f5e6e1;
+  color: #a85e4f;
+}
+
+.deleteButton:hover {
+  background: #a85e4f;
+  color: #ffffff;
 }
