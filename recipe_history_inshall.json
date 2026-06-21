@@ -1,0 +1,72 @@
+[
+  {
+    "name": "🍝 White Sauce Pasta",
+    "original": "🧂 Ingredients\n\nFor pasta\n\n300 g pasta (penne or spaghetti)\nWater (for boiling)\n1 tsp salt\n\nFor white sauce (béchamel)\n\n2 tbsp butter\n2 tbsp all-purpose flour (maida)\n2 cups milk (500 ml)\n1 tsp salt (adjust to taste)\n½ tsp black pepper\n½ tsp chili flakes (optional)\n½ tsp oregano\n\nVegetables (optional but recommended)\n\n1 small onion, sliced\n1 capsicum, chopped\n½ cup sweet corn\n½ cup mushrooms (optional)\n\nExtras\n\n½ cup grated cheese (optional)",
+    "scaled": "🧂 Ingredients\n\nFor pasta\n\n450 g pasta (penne or spaghetti)\nWater (for boiling)\n1 1/2 tsp salt\n\nFor white sauce (béchamel)\n\n3 tbsp butter\n3 tbsp all-purpose flour (maida)\n3 cups milk (750 ml)\n1 1/2 tsp salt (adjust to taste)\n3/4 tsp black pepper\n3/4 tsp chili flakes (optional)\n3/4 tsp oregano\n\nVegetables (optional but recommended)\n\n1 small onion, sliced\n1 capsicum, chopped\n3/4 cup sweet corn\n3/4 cup mushrooms (optional)\n\nExtras\n\n3/4 cup grated cheese (optional)",
+    "details": [
+      {
+        "original": "300 g pasta (penne or spaghetti)",
+        "scaled": "450 g pasta (penne or spaghetti)",
+        "grams": null
+      },
+      {
+        "original": "1 tsp salt",
+        "scaled": "1 1/2 tsp salt",
+        "grams": "7 1/2 g"
+      },
+      {
+        "original": "2 tbsp butter",
+        "scaled": "3 tbsp butter",
+        "grams": "45 g"
+      },
+      {
+        "original": "2 tbsp all-purpose flour (maida)",
+        "scaled": "3 tbsp all-purpose flour (maida)",
+        "grams": "45 g"
+      },
+      {
+        "original": "2 cups milk (500 ml)",
+        "scaled": "3 cups milk (750 ml)",
+        "grams": "360 g"
+      },
+      {
+        "original": "1 tsp salt (adjust to taste)",
+        "scaled": "1 1/2 tsp salt (adjust to taste)",
+        "grams": "7 1/2 g"
+      },
+      {
+        "original": "½ tsp black pepper",
+        "scaled": "3/4 tsp black pepper",
+        "grams": "3 3/4 g"
+      },
+      {
+        "original": "½ tsp chili flakes (optional)",
+        "scaled": "3/4 tsp chili flakes (optional)",
+        "grams": "3 3/4 g"
+      },
+      {
+        "original": "½ tsp oregano",
+        "scaled": "3/4 tsp oregano",
+        "grams": "3 3/4 g"
+      },
+      {
+        "original": "½ cup sweet corn",
+        "scaled": "3/4 cup sweet corn",
+        "grams": "90 g"
+      },
+      {
+        "original": "½ cup mushrooms (optional)",
+        "scaled": "3/4 cup mushrooms (optional)",
+        "grams": "90 g"
+      },
+      {
+        "original": "½ cup grated cheese (optional)",
+        "scaled": "3/4 cup grated cheese (optional)",
+        "grams": "90 g"
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 4,
+    "desired_servings": 6
+  }
+]

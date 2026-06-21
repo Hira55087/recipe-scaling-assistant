@@ -1,0 +1,11 @@
+{
+  "hira": {
+    "salt": "edc64896624caf4ce84a82e0f5489623",
+    "password_hash": "c053e4802d71ecc3db3a66d6a67d69da065c62197555f56e5495df7adba92197"
+  },
+  "inshall": {
+    "email": "55087@students.riphah.edu.pk",
+    "salt": "e7394619a88d72ba71a78926762cd385",
+    "password_hash": "e00b12b42d2ad52c42f93838178c85f672d39e53a9c13aeee8cc3ace334c0baf"
+  }
+}

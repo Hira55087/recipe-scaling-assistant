@@ -1,5 +1,409 @@
 [
   {
+    "name": "🍰 Simple Vanilla Cake",
+    "original": "Ingredients\n1½ cups all-purpose flour\n1 cup sugar\n½ cup butter (softened)\n2 eggs\n1 cup milk\n1½ tsp baking powder\n1 tsp vanilla extract\nA pinch of salt",
+    "scaled": "Ingredients\n4 1/2 cups all-purpose flour\n3 cup sugar\n1 1/2 cup butter (softened)\n6 eggs\n3 cup milk\n4 1/2 tsp baking powder\n3 tsp vanilla extract\nA pinch of salt",
+    "details": [
+      {
+        "original": "1½ cups all-purpose flour",
+        "scaled": "4 1/2 cups all-purpose flour",
+        "grams": "540 g"
+      },
+      {
+        "original": "1 cup sugar",
+        "scaled": "3 cup sugar",
+        "grams": "360 g"
+      },
+      {
+        "original": "½ cup butter (softened)",
+        "scaled": "1 1/2 cup butter (softened)",
+        "grams": "180 g"
+      },
+      {
+        "original": "2 eggs",
+        "scaled": "6 eggs",
+        "grams": null
+      },
+      {
+        "original": "1 cup milk",
+        "scaled": "3 cup milk",
+        "grams": "360 g"
+      },
+      {
+        "original": "1½ tsp baking powder",
+        "scaled": "4 1/2 tsp baking powder",
+        "grams": "22 1/2 g"
+      },
+      {
+        "original": "1 tsp vanilla extract",
+        "scaled": "3 tsp vanilla extract",
+        "grams": "15 g"
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 2,
+    "desired_servings": 6
+  },
+  {
+    "name": "Chicken Shawarma Recipe",
+    "original": "For chicken marinade:\n500 g boneless chicken (thigh or breast)\n3 tbsp yogurt\n2 tbsp olive oil\n1 tbsp lemon juice\n3 cloves garlic (minced)\n1 tsp salt\n1 tsp black pepper\n1 tsp paprika\n1 tsp cumin powder\n½ tsp turmeric\n½ tsp chili powder\n½ tsp coriander powder\nFor shawarma wrap:\nPita bread or tortilla wraps\nSliced onions\nSliced tomatoes\nLettuce or cabbage\nGarlic sauce:\n4 tbsp mayonnaise\n2 tbsp yogurt\n1 tsp garlic paste\n1 tsp lemon juice\nSalt to taste",
+    "scaled": "For chicken marinade:\n1166 11/16 g boneless chicken (thigh or breast)\n7 tbsp yogurt\n4 11/16 tbsp olive oil\n2 5/16 tbsp lemon juice\n7 cloves garlic (minced)\n2 5/16 tsp salt\n2 5/16 tsp black pepper\n2 5/16 tsp paprika\n2 5/16 tsp cumin powder\n1 3/16 tsp turmeric\n1 3/16 tsp chili powder\n1 3/16 tsp coriander powder\nFor shawarma wrap:\nPita bread or tortilla wraps\nSliced onions\nSliced tomatoes\nLettuce or cabbage\nGarlic sauce:\n9 5/16 tbsp mayonnaise\n4 11/16 tbsp yogurt\n2 5/16 tsp garlic paste\n2 5/16 tsp lemon juice\nSalt to taste",
+    "details": [
+      {
+        "original": "500 g boneless chicken (thigh or breast)",
+        "scaled": "1166 11/16 g boneless chicken (thigh or breast)",
+        "grams": null
+      },
+      {
+        "original": "3 tbsp yogurt",
+        "scaled": "7 tbsp yogurt",
+        "grams": "105 g"
+      },
+      {
+        "original": "2 tbsp olive oil",
+        "scaled": "4 11/16 tbsp olive oil",
+        "grams": "70 g"
+      },
+      {
+        "original": "1 tbsp lemon juice",
+        "scaled": "2 5/16 tbsp lemon juice",
+        "grams": "35 g"
+      },
+      {
+        "original": "3 cloves garlic (minced)",
+        "scaled": "7 cloves garlic (minced)",
+        "grams": null
+      },
+      {
+        "original": "1 tsp salt",
+        "scaled": "2 5/16 tsp salt",
+        "grams": "11 11/16 g"
+      },
+      {
+        "original": "1 tsp black pepper",
+        "scaled": "2 5/16 tsp black pepper",
+        "grams": "11 11/16 g"
+      },
+      {
+        "original": "1 tsp paprika",
+        "scaled": "2 5/16 tsp paprika",
+        "grams": "11 11/16 g"
+      },
+      {
+        "original": "1 tsp cumin powder",
+        "scaled": "2 5/16 tsp cumin powder",
+        "grams": "11 11/16 g"
+      },
+      {
+        "original": "½ tsp turmeric",
+        "scaled": "1 3/16 tsp turmeric",
+        "grams": "5 13/16 g"
+      },
+      {
+        "original": "½ tsp chili powder",
+        "scaled": "1 3/16 tsp chili powder",
+        "grams": "5 13/16 g"
+      },
+      {
+        "original": "½ tsp coriander powder",
+        "scaled": "1 3/16 tsp coriander powder",
+        "grams": "5 13/16 g"
+      },
+      {
+        "original": "4 tbsp mayonnaise",
+        "scaled": "9 5/16 tbsp mayonnaise",
+        "grams": "140 g"
+      },
+      {
+        "original": "2 tbsp yogurt",
+        "scaled": "4 11/16 tbsp yogurt",
+        "grams": "70 g"
+      },
+      {
+        "original": "1 tsp garlic paste",
+        "scaled": "2 5/16 tsp garlic paste",
+        "grams": "11 11/16 g"
+      },
+      {
+        "original": "1 tsp lemon juice",
+        "scaled": "2 5/16 tsp lemon juice",
+        "grams": "11 11/16 g"
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 3,
+    "desired_servings": 7
+  },
+  {
+    "name": "Chicken Broast Recipe",
+    "original": "For chicken:\n6 chicken pieces (leg or thigh pieces work best)\n1 cup yogurt\n1 tbsp lemon juice\n1 tsp garlic paste\n1 tsp ginger paste\n1 tsp salt\n1 tsp red chili powder\n½ tsp black pepper\n½ tsp turmeric\n1 tsp paprika (optional)\nFor coating:\n1 cup all-purpose flour (maida)\n½ cup corn flour\n1 tsp baking powder\n1 tsp salt\n1 tsp chili flakes (optional)\nFor frying:\nOil (for deep frying)",
+    "scaled": "For chicken:\n6 chicken pieces (leg or thigh pieces work best)\n1 cup yogurt\n1 tbsp lemon juice\n1 tsp garlic paste\n1 tsp ginger paste\n1 tsp salt\n1 tsp red chili powder\n½ tsp black pepper\n½ tsp turmeric\n1 tsp paprika (optional)\nFor coating:\n1 cup all-purpose flour (maida)\n½ cup corn flour\n1 tsp baking powder\n1 tsp salt\n1 tsp chili flakes (optional)\nFor frying:\nOil (for deep frying)\n",
+    "details": [],
+    "tip": "Always taste before serving and adjust seasoning.",
+    "current_servings": 3,
+    "desired_servings": 7
+  },
+  {
+    "name": "Beef Burger Recipe",
+    "original": "For patties:\n\n250 g minced beef (ground beef)\n1 small onion (finely chopped)\n1–2 garlic cloves (minced)\n1 tsp salt\n½ tsp black pepper\n1 tsp soy sauce (optional, adds flavor)\n1 tbsp bread crumbs (helps bind)\n1 egg (optional, for binding)\n\nFor assembling:\n\n2 burger buns\nLettuce leaves\n2 cheese slices\nTomato slices\nOnion rings\nKetchup / mayo / burger sauce",
+    "scaled": "For patties:\n\n750 g minced beef (ground beef)\n1 small onion (finely chopped)\n1–2 garlic cloves (minced)\n3 tsp salt\n1 1/2 tsp black pepper\n3 tsp soy sauce (optional, adds flavor)\n3 tbsp bread crumbs (helps bind)\n3 egg (optional, for binding)\n\nFor assembling:\n\n2 burger buns\nLettuce leaves\n2 cheese slices\nTomato slices\nOnion rings\nKetchup / mayo / burger sauce",
+    "details": [
+      {
+        "original": "250 g minced beef (ground beef)",
+        "scaled": "750 g minced beef (ground beef)",
+        "grams": null
+      },
+      {
+        "original": "1 tsp salt",
+        "scaled": "3 tsp salt",
+        "grams": "15 g"
+      },
+      {
+        "original": "½ tsp black pepper",
+        "scaled": "1 1/2 tsp black pepper",
+        "grams": "7 1/2 g"
+      },
+      {
+        "original": "1 tsp soy sauce (optional, adds flavor)",
+        "scaled": "3 tsp soy sauce (optional, adds flavor)",
+        "grams": "15 g"
+      },
+      {
+        "original": "1 tbsp bread crumbs (helps bind)",
+        "scaled": "3 tbsp bread crumbs (helps bind)",
+        "grams": "45 g"
+      },
+      {
+        "original": "1 egg (optional, for binding)",
+        "scaled": "3 egg (optional, for binding)",
+        "grams": null
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 2,
+    "desired_servings": 6
+  },
+  {
+    "name": "White Sauce Past",
+    "original": "🧂 Ingredients\n\nFor pasta\n\n300 g pasta (penne or spaghetti)\nWater (for boiling)\n1 tsp salt\n\nFor white sauce (béchamel)\n\n2 tbsp butter\n2 tbsp all-purpose flour (maida)\n2 cups milk (500 ml)\n1 tsp salt (adjust to taste)\n½ tsp black pepper\n½ tsp chili flakes (optional)\n½ tsp oregano\n\nVegetables (optional but recommended)\n\n1 small onion, sliced\n1 capsicum, chopped\n½ cup sweet corn\n½ cup mushrooms (optional)\n\nExtras\n\n½ cup grated cheese (optional)",
+    "scaled": "🧂 Ingredients\n\nFor pasta\n\n600 g pasta (penne or spaghetti)\nWater (for boiling)\n2 tsp salt\n\nFor white sauce (béchamel)\n\n4 tbsp butter\n4 tbsp all-purpose flour (maida)\n4 cups milk (1000 ml)\n2 tsp salt (adjust to taste)\n1 tsp black pepper\n1 tsp chili flakes (optional)\n1 tsp oregano\n\nVegetables (optional but recommended)\n\n1 small onion, sliced\n1 capsicum, chopped\n1 cup sweet corn\n1 cup mushrooms (optional)\n\nExtras\n\n1 cup grated cheese (optional)",
+    "details": [
+      {
+        "original": "300 g pasta (penne or spaghetti)",
+        "scaled": "600 g pasta (penne or spaghetti)",
+        "grams": null
+      },
+      {
+        "original": "1 tsp salt",
+        "scaled": "2 tsp salt",
+        "grams": "10 g"
+      },
+      {
+        "original": "2 tbsp butter",
+        "scaled": "4 tbsp butter",
+        "grams": "60 g"
+      },
+      {
+        "original": "2 tbsp all-purpose flour (maida)",
+        "scaled": "4 tbsp all-purpose flour (maida)",
+        "grams": "60 g"
+      },
+      {
+        "original": "2 cups milk (500 ml)",
+        "scaled": "4 cups milk (1000 ml)",
+        "grams": "480 g"
+      },
+      {
+        "original": "1 tsp salt (adjust to taste)",
+        "scaled": "2 tsp salt (adjust to taste)",
+        "grams": "10 g"
+      },
+      {
+        "original": "½ tsp black pepper",
+        "scaled": "1 tsp black pepper",
+        "grams": "5 g"
+      },
+      {
+        "original": "½ tsp chili flakes (optional)",
+        "scaled": "1 tsp chili flakes (optional)",
+        "grams": "5 g"
+      },
+      {
+        "original": "½ tsp oregano",
+        "scaled": "1 tsp oregano",
+        "grams": "5 g"
+      },
+      {
+        "original": "½ cup sweet corn",
+        "scaled": "1 cup sweet corn",
+        "grams": "120 g"
+      },
+      {
+        "original": "½ cup mushrooms (optional)",
+        "scaled": "1 cup mushrooms (optional)",
+        "grams": "120 g"
+      },
+      {
+        "original": "½ cup grated cheese (optional)",
+        "scaled": "1 cup grated cheese (optional)",
+        "grams": "120 g"
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 4,
+    "desired_servings": 8
+  },
+  {
+    "name": "🍪 Chocolate Chip Cookies Recipe",
+    "original": "🧂 Ingredients\n125 g butter (softened)\n100 g brown sugar\n50 g white sugar\n1 egg\n1 tsp vanilla extract\n180 g all-purpose flour\n½ tsp baking soda\n¼ tsp salt\n120 g chocolate chips",
+    "scaled": "🧂 Ingredients\n250 g butter (softened)\n200 g brown sugar\n100 g white sugar\n2 egg\n2 tsp vanilla extract\n360 g all-purpose flour\n1 tsp baking soda\n1/2 tsp salt\n240 g chocolate chips",
+    "details": [
+      {
+        "original": "125 g butter (softened)",
+        "scaled": "250 g butter (softened)",
+        "grams": null
+      },
+      {
+        "original": "100 g brown sugar",
+        "scaled": "200 g brown sugar",
+        "grams": null
+      },
+      {
+        "original": "50 g white sugar",
+        "scaled": "100 g white sugar",
+        "grams": null
+      },
+      {
+        "original": "1 egg",
+        "scaled": "2 egg",
+        "grams": null
+      },
+      {
+        "original": "1 tsp vanilla extract",
+        "scaled": "2 tsp vanilla extract",
+        "grams": "10 g"
+      },
+      {
+        "original": "180 g all-purpose flour",
+        "scaled": "360 g all-purpose flour",
+        "grams": null
+      },
+      {
+        "original": "½ tsp baking soda",
+        "scaled": "1 tsp baking soda",
+        "grams": "5 g"
+      },
+      {
+        "original": "¼ tsp salt",
+        "scaled": "1/2 tsp salt",
+        "grams": "2 1/2 g"
+      },
+      {
+        "original": "120 g chocolate chips",
+        "scaled": "240 g chocolate chips",
+        "grams": null
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 5,
+    "desired_servings": 10
+  },
+  {
+    "name": "🍫 Chocolate Ice Cream Recipe (Serves 3)",
+    "original": "🧂 Ingredients\n1 cup (heavy cream\n½ cup (whole milk\n⅓ cup  sugar\n¼ cup  cocoa powder\n1 tsp vanilla extract\nA pinch of salt\n50 g dark chocolate (optional, for richer taste)",
+    "scaled": "🧂 Ingredients\n2 cup (heavy cream\n1 cup (whole milk\n11/16 cup  sugar\n1/2 cup  cocoa powder\n2 tsp vanilla extract\nA pinch of salt\n100 g dark chocolate (optional, for richer taste)",
+    "details": [
+      {
+        "original": "1 cup (heavy cream",
+        "scaled": "2 cup (heavy cream",
+        "grams": "240 g"
+      },
+      {
+        "original": "½ cup (whole milk",
+        "scaled": "1 cup (whole milk",
+        "grams": "120 g"
+      },
+      {
+        "original": "⅓ cup  sugar",
+        "scaled": "11/16 cup  sugar",
+        "grams": "80 g"
+      },
+      {
+        "original": "¼ cup  cocoa powder",
+        "scaled": "1/2 cup  cocoa powder",
+        "grams": "60 g"
+      },
+      {
+        "original": "1 tsp vanilla extract",
+        "scaled": "2 tsp vanilla extract",
+        "grams": "10 g"
+      },
+      {
+        "original": "50 g dark chocolate (optional, for richer taste)",
+        "scaled": "100 g dark chocolate (optional, for richer taste)",
+        "grams": null
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 3,
+    "desired_servings": 6
+  },
+  {
+    "name": "Untitled Recipe",
+    "original": "1 cup flour",
+    "scaled": "2 cup flour",
+    "details": [
+      {
+        "original": "1 cup flour",
+        "scaled": "2 cup flour",
+        "grams": "240 g"
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 4,
+    "desired_servings": 8
+  },
+  {
+    "name": "Butter Chicken Recipe",
+    "original": "🧂 Ingredients\nFor the Chicken Marinade\n500g boneless chicken, cut into pieces\n½ cup yogurt\n1 tbsp lemon juice\n1 tsp red chili powder\n½ tsp turmeric powder\n1 tsp garam masala\n1 tsp ginger-garlic paste\nSalt to taste",
+    "scaled": "🧂 Ingredients\nFor the Chicken Marinade\n1000 g boneless chicken, cut into pieces\n1 cup yogurt\n2 tbsp lemon juice\n2 tsp red chili powder\n1 tsp turmeric powder\n2 tsp garam masala\n2 tsp ginger-garlic paste\nSalt to taste",
+    "details": [
+      {
+        "original": "½ cup yogurt",
+        "scaled": "1 cup yogurt",
+        "grams": "120 g"
+      },
+      {
+        "original": "1 tbsp lemon juice",
+        "scaled": "2 tbsp lemon juice",
+        "grams": "30 g"
+      },
+      {
+        "original": "1 tsp red chili powder",
+        "scaled": "2 tsp red chili powder",
+        "grams": "10 g"
+      },
+      {
+        "original": "½ tsp turmeric powder",
+        "scaled": "1 tsp turmeric powder",
+        "grams": "5 g"
+      },
+      {
+        "original": "1 tsp garam masala",
+        "scaled": "2 tsp garam masala",
+        "grams": "10 g"
+      },
+      {
+        "original": "1 tsp ginger-garlic paste",
+        "scaled": "2 tsp ginger-garlic paste",
+        "grams": "10 g"
+      }
+    ],
+    "tip": "Use a larger pan or bowl when scaling up to keep cooking even and avoid spills.",
+    "current_servings": 4,
+    "desired_servings": 8
+  },
+  {
     "name": "Simple Spaghetti Recip",
     "original": "Ingredients\n400 g spaghetti\n2 tbsp olive oil\n4 cloves garlic, minced\n1 medium onion, finely chopped\n400 g canned tomatoes (or 4 fresh tomatoes, chopped)\n1 tsp salt\n½ tsp black pepper\n1 tsp dried oregano\n½ tsp chili flakes (optional)\n¼ cup fresh basil or parsley, chopped\n½ cup grated Parmesan cheese (optional)",
     "scaled": "Ingredients\n800 g spaghetti\n4 tbsp olive oil\n8 cloves garlic, minced\n1 medium onion, finely chopped\n800 g canned tomatoes (or 4 fresh tomatoes, chopped)\n2 tsp salt\n1 tsp black pepper\n2 tsp dried oregano\n1 tsp chili flakes (optional)\n1/2 cup fresh basil or parsley, chopped\n1 cup grated Parmesan cheese (optional)",

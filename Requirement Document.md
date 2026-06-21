@@ -1,6 +1,14 @@
 # Recipe Scaler - Requirements Document
 
 ## 1. Project Overview
+Many recipes are written for fixed servings.
+Users need an easy way to scale ingredients accurately.
+Features :
+- Recipe scaling
+- Unit conversion
+- Gemini integration
+- RAG knowledge base
+- Streamlit frontend
 
 ### 1.1 Project Title
 Recipe Scaler - Intelligent Recipe Ingredient Scaling Tool
